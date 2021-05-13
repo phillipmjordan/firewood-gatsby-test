@@ -14,6 +14,6 @@ const PreviewPage = ({ isPreview }) => {
 }
 
 export default withPreviewResolver(PreviewPage, {
-  repositoryName: process.env.GATSBY_PRISMIC_REPOSITORY_NAME,
+  repositoryName: process.env.PRISMIC_REPOSITORY_NAME,
   linkResolver,
 })

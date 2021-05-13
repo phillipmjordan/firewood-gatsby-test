@@ -20,7 +20,5 @@ export default withUnpublishedPreview(NotFoundPage, {
   templateMap: {
     page: Page,
     homepage: Homepage,
-    prismicPage: Page,
-    prismicHomepage: Homepage,
   },
 })

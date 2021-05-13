@@ -5,7 +5,7 @@ import Layout from '../components/Layout'
 import SEO from '../components/SEO'
 import SliceZone from '../components/SliceZone'
 
-export const Page = ({ data }) => {
+const Page = ({ data }) => {
   if (!data) return null
   const document = data.allPrismicPage.edges[0].node
   const prismicNavigation = data.prismicNavigation
@@ -21,6 +21,8 @@ export const Page = ({ data }) => {
     </Layout>
   )
 }
+
+export default withPreview(Page)
 
 export const query = graphql`
   query PageQuery($uid: String) {
@@ -116,5 +118,3 @@ export const query = graphql`
     }
   }
 `
-
-export default withPreview(Page)

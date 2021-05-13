@@ -5,7 +5,7 @@ import Layout from '../components/Layout'
 import SEO from '../components/SEO'
 import SliceZone from '../components/SliceZone'
 
-const Page = ({ data }) => {
+export const Page = ({ data }) => {
   if (!data) return null
   const document = data.allPrismicPage.edges[0].node
   const prismicNavigation = data.prismicNavigation

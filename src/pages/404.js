@@ -2,8 +2,8 @@ import React from 'react'
 import { withUnpublishedPreview } from 'gatsby-source-prismic'
 import Layout from '../components/Layout'
 import SEO from '../components/SEO'
-import { Homepage } from './index'
-import { Page } from '../templates/Page'
+import Homepage  from './index'
+import Page  from '../templates/Page'
 
 const NotFoundPage = () => (
   <Layout>

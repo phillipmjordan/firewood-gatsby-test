@@ -16,7 +16,7 @@ const PreviewPage = ({ isPreview }) => {
   )
 }
 
-export default (props) => {
+const Named = (props) => {
   const data = useStaticQuery(graphql`query {
     sitePlugin(name: {eq: "gatsby-source-prismic"}) {
       pluginOptions {
@@ -31,3 +31,5 @@ export default (props) => {
     linkResolver: () => linkResolver,
   })(props)
 }
+
+export default Named;
